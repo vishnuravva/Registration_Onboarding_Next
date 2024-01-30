@@ -1,0 +1,332 @@
+* {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
+.bg_image {
+  background: linear-gradient(
+      0deg,
+      rgba(21, 101, 216, 0.9) 0%,
+      rgba(21, 101, 216, 0.9) 100%
+    ),
+    url("../public/assets/building.jpg") no-repeat center/cover, lightgray 50%;
+  width: 40dvw;
+  height: 100vh;
+}
+
+.p-8 {
+  padding: 64px 0 0 82px;
+}
+
+.bank_verify_resp,
+.residency_comp,
+.register_comp {
+  width: 60%;
+}
+.w-90 {
+  width: 90%;
+}
+.w-60 {
+  width: 60%;
+}
+
+.m-8 {
+  margin: 4rem;
+}
+.m-6 {
+  margin: 3.5rem 3.5rem 3.5rem 4rem;
+}
+.color_home {
+  color: #8692a6;
+}
+.fs-7 {
+  font-size: 1.25rem;
+}
+.content {
+  position: relative;
+}
+.cursor {
+  cursor: pointer;
+}
+.content::before {
+  content: "“";
+  position: absolute;
+  top: -40px;
+  color: #00daf7;
+  font-family: "Gayathri";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.custom-font-600 {
+  font-family: "Gilroy", sans-serif;
+  font-style: normal;
+  line-height: normal;
+}
+.custom-text-color {
+  color: #00daf7;
+  font-family: "Gayathri";
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.account {
+  margin: 4rem;
+}
+.bg_join {
+  border-radius: 6px;
+  box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.04);
+  cursor: pointer;
+}
+.active_br_bg {
+  border: 1px solid #1565d8;
+  background: #f5f9ff;
+}
+
+.max-w-600 {
+  max-width: 400px;
+}
+.max-w-500 {
+  max-width: 600px;
+}
+.max-w-700 {
+  max-width: 700px;
+}
+.icons_absolute {
+  position: absolute;
+  left: 32%;
+  right: 0;
+  top: 25%;
+  bottom: 0;
+}
+.input_signin {
+  border-radius: 6px;
+  border: 1px solid #8692a6;
+
+  width: 100%;
+  background: #fff;
+  padding: 1rem;
+}
+.input_signin::placeholder {
+  padding: 0.5rem;
+}
+.input_signin:focus {
+  border: none;
+  outline: none;
+  border: 1px solid #1565d8;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+}
+.password_signin {
+  border-radius: 6px;
+  border: 1px solid #8692a6;
+
+  width: 100%;
+  background: #fff;
+  padding: 0.5rem;
+}
+.passBtn {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+.password_signin input {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  width: 90%;
+  padding: 0.5rem;
+}
+.password_signin input::placeholder {
+  padding: 0.5rem;
+}
+.clicked_password_div {
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+  border: 1px solid #1565d8;
+}
+
+.color_signin_input {
+  color: #696f79;
+}
+.checkbox_input {
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 1.667px;
+  justify-content: center;
+  border-radius: 10px;
+  align-items: center;
+  flex-shrink: 0;
+}
+.register_btn {
+  background: #1565d8;
+  padding: 1rem;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+}
+.google_btn {
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  border-radius: 6px;
+  background: #fff;
+  color: #000;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.08);
+}
+.save_btn {
+  background: #1565d8;
+  color: #fff;
+  border-radius: 6px;
+  padding: 1rem;
+}
+.mt-5rem {
+  margin-top: 5rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  .joinus,
+  .signin_page,
+  .bank_page,
+  .residency_page {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .join_resp,
+  .register_comp,
+  .bank_verify_resp,
+  .landing_resp {
+    width: 100%;
+    height: 100%;
+  }
+
+  .residency_comp {
+    width: 95%;
+  }
+  
+
+  .landing_resp .content p {
+    font-size: 1.2rem;
+  }
+  .register_box_resp {
+    max-width: 800px;
+  }
+}
+.header_resp {
+  margin: 3rem;
+}
+
+@media only screen and (max-width: 745px) {
+  .landing_resp .content p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .register_box_resp,
+  .bank_profile {
+    max-width: 350px;
+  }
+
+  .join_max_w_resp {
+    max-width: 300px;
+  }
+  .joinus_title_resp {
+    margin-top: 0;
+    font-size: 1rem;
+  }
+  .joinus_subtitle_resp {
+    font-size: 0.75rem;
+  }
+  .business {
+    font-size: 1rem;
+  }
+
+  .individual {
+    font-size: 1rem;
+  }
+  .personal {
+    font-size: 0.8rem;
+  }
+
+  .join_header_resp {
+    font-size: 0.8rem;
+  }
+  .header_resp {
+    margin: 1.5rem;
+  }
+
+  .own {
+    font-size: 0.8rem;
+  }
+  .poly_fill {
+    width: 30px;
+    height: 30px;
+  }
+  .icons_absolute {
+    top: 3px;
+  }
+  .poly_icon {
+    width: 10px;
+    height: 10px;
+  }
+  .account {
+    margin: 2rem;
+  }
+}
+
+.country_select {
+  padding: 0.5rem;
+  border: none;
+  width: 30%;
+  border-radius: 6px;
+  background: #fff;
+}
+.country_select:focus {
+  border: none;
+  outline: none;
+}
+
+.phone_no {
+  border: none;
+
+  background: #fff;
+  padding: 0.5rem;
+  margin-left: 10px;
+  width: 60%;
+}
+.phone_no:focus {
+  border: none;
+  outline: none;
+}
+
+.phone_no_div {
+  padding: 0.5rem;
+  border: 1px solid #8692a6;
+  border-radius: 6px;
+}
+.country_div {
+  padding: 0.5rem;
+  border: 1px solid #8692a6;
+  border-radius: 6px;
+  width: 100%;
+  background-color: #fff;
+}
+.country_input {
+  padding: 0.5rem;
+  border-radius: 6px;
+  width: 100%;
+  border: none;
+  background-color: #fff;
+}
+.country_input:focus {
+  border: none;
+  outline: none;
+}
